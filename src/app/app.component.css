@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+}
+
+.sub {
+    height: 100%;
+    width: 50%;
+    
+}

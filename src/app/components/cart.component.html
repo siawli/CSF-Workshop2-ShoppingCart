@@ -1,0 +1,13 @@
+<div>
+    <h1 style="text-align: center;">Cart</h1>
+</div>
+
+<div>
+    <div *ngFor="let item of cartItems | keyvalue" class="item">
+        <!-- assets/numbers/number1.jpg -->
+        <img src="assets/numbers/number{{item.key}}.jpg">
+        <p>Item {{item.key}}</p>
+        <p>Quantity: {{item.value}}</p>
+        <button type="button" (click)="delete(item.key)">Delete</button>
+    </div>
+</div>
